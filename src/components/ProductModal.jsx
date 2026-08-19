@@ -107,6 +107,61 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
     }
   };
 
+  const renderAccessLink = (rawLink, label, icon, copyType) => {
+    if (!rawLink) return null;
+
+    const trimmed = rawLink.trim();
+    const isUrl = /^https?:\/\//i.test(trimmed);
+
+    if (isUrl) {
+      return (
+        <div className="flex min-w-0 items-center justify-between gap-2 rounded-xl border border-[#2563EB]/15 bg-[#0f172a] p-2.5 text-xs">
+          <a
+            href={sanitizeUrl(trimmed)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-2 flex min-w-0 flex-1 items-center gap-2 overflow-hidden font-bold text-slate-200 hover:text-white"
+          >
+            {icon}
+            <span className="min-w-0 truncate">{label}</span>
+          </a>
+          <button
+            type="button"
+            onClick={() => copiarAlPortapapeles(trimmed, copyType)}
+            className="shrink-0 rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white"
+            title="Copiar Enlace"
+            aria-label={`Copiar enlace de ${label}`}
+          >
+            {copiado === copyType ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
+          </button>
+        </div>
+      );
+    }
+
+    const wsText = `Hola, quisiera consultar sobre ${productoModal.nombre} (${label}: ${trimmed})`;
+    const wsUrl = buildWhatsAppLink('5493815891843', wsText);
+
+    return (
+      <div className="flex min-w-0 items-center justify-between gap-2 rounded-xl border border-[#FACC15]/30 bg-[#FACC15]/10 p-2.5 text-xs">
+        <div className="flex min-w-0 flex-1 items-center gap-2 overflow-hidden font-bold text-[#FACC15]">
+          {icon}
+          <div className="min-w-0 flex flex-col">
+            <span className="text-[10px] font-semibold text-slate-300">{label}</span>
+            <span className="min-w-0 truncate text-white">{trimmed}</span>
+          </div>
+        </div>
+        <a
+          href={wsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 rounded-lg bg-[#FACC15] px-2.5 py-1 text-[10px] font-black uppercase text-[#0b0d11] transition-all hover:bg-[#f4c814] shadow-sm"
+        >
+          Consultar
+        </a>
+      </div>
+    );
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-2 sm:p-4 backdrop-blur-sm animate-fade-in"
@@ -268,50 +323,17 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
             </h4>
 
             <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-              {productoModal.linkUsuario && (
-                <div className="flex min-w-0 items-center justify-between gap-2 rounded-xl border border-[#2563EB]/15 bg-[#0f172a] p-2.5 text-xs">
-                  <a
-                    href={sanitizeUrl(productoModal.linkUsuario)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-2 flex min-w-0 flex-1 items-center gap-2 overflow-hidden font-bold text-slate-200 hover:text-white"
-                  >
-                    <User className="h-3.5 w-3.5 shrink-0 text-[#2563EB]" />
-                    <span className="min-w-0 truncate">Web Jugadores</span>
-                  </a>
-                  <button
-                    type="button"
-                    onClick={() => copiarAlPortapapeles(productoModal.linkUsuario, 'user')}
-                    className="shrink-0 rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white"
-                    title="Copiar Enlace"
-                    aria-label="Copiar enlace de usuarios"
-                  >
-                    {copiado === 'user' ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
-                  </button>
-                </div>
+              {renderAccessLink(
+                productoModal.linkUsuario,
+                'Web Jugadores',
+                <User className="h-3.5 w-3.5 shrink-0 text-[#2563EB]" />,
+                'user'
               )}
-
-              {productoModal.linkAdmin && (
-                <div className="flex min-w-0 items-center justify-between gap-2 rounded-xl border border-[#2563EB]/15 bg-[#0f172a] p-2.5 text-xs">
-                  <a
-                    href={sanitizeUrl(productoModal.linkAdmin)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-2 flex min-w-0 flex-1 items-center gap-2 overflow-hidden font-bold text-slate-200 hover:text-white"
-                  >
-                    <Lock className="h-3.5 w-3.5 shrink-0 text-[#2563EB]" />
-                    <span className="min-w-0 truncate">Panel Admin</span>
-                  </a>
-                  <button
-                    type="button"
-                    onClick={() => copiarAlPortapapeles(productoModal.linkAdmin, 'admin')}
-                    className="shrink-0 rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white"
-                    title="Copiar Enlace"
-                    aria-label="Copiar enlace de administración"
-                  >
-                    {copiado === 'admin' ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
-                  </button>
-                </div>
+              {renderAccessLink(
+                productoModal.linkAdmin,
+                'Panel Admin',
+                <Lock className="h-3.5 w-3.5 shrink-0 text-[#2563EB]" />,
+                'admin'
               )}
             </div>
           </div>

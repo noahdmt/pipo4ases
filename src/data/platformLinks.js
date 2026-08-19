@@ -20,77 +20,77 @@ export const PLATFORM_LINKS = {
   },
   2: {
     nombre: 'Konabet',
-    linkUsuario: 'https://www.konabet30.ws/',
+    linkUsuario: 'https://konabet40.com',
     linkAdmin: 'https://www.admin.online/',
   },
   3: {
     nombre: 'Apostamos',
-    linkUsuario: 'https://apostamos.shop/',
+    linkUsuario: 'https://apostamos.shop',
     linkAdmin: 'https://agents.apostamos.shop/',
   },
   11: {
     nombre: 'Mega Faraon',
-    linkUsuario: 'https://megafaraon.vip/',
-    linkAdmin: 'https://admin.megafaraon.vip/auth/login',
+    linkUsuario: 'https://megafaraon.live',
+    linkAdmin: 'https://admin.megafaraon.live/',
   },
   12: {
     nombre: 'Oro Puro',
-    linkUsuario: 'https://oropuro.online/',
-    linkAdmin: 'https://admin.oropuro.online/',
+    linkUsuario: 'https://oropuro.site',
+    linkAdmin: 'https://admin.oropuro.site/',
   },
   13: {
     nombre: 'Piña Play',
-    linkUsuario: 'https://pinaplay.net/',
+    linkUsuario: 'https://pinaplay.net',
     linkAdmin: 'https://agents.pinaplay.net/',
   },
   14: {
     nombre: 'Jugamos',
-    linkUsuario: 'https://jugamos.lat',
-    linkAdmin: 'https://agentes.jugamos.lat/',
+    linkUsuario: null,
+    linkAdmin: 'https://agentes.plus',
   },
   15: {
     nombre: 'Ganamos VIP',
-    linkUsuario: 'https://ganamosvip.co/',
-    linkAdmin: 'https://admin.ganamosvip.co/',
+    linkUsuario: 'https://admin.ganamosvip.org',
+    linkAdmin: 'https://admin.ganamosvip.org',
   },
   16: {
     nombre: 'Gana en Casa MultiSkin',
-    linkUsuario: 'https://ganaencasavip.org/',
-    linkAdmin: 'https://admin.ganaencasavip.org/',
+    linkUsuario: 'https://ganaencasavip.to',
+    linkAdmin: 'https://admin.ganaencasavip.to/',
   },
   17: {
-    nombre: 'Ganamos Org',
-    linkUsuario: 'https://ganamosnet.org',
-    linkAdmin: 'https://agents.ganamosnet.org',
+    nombre: 'GanamosNET',
+    linkUsuario: 'https://ganamosonline.com',
+    linkAdmin: 'https://agents.ganamosonline.com',
   },
   18: {
     nombre: 'Bet30',
-    linkUsuario: null,
+    linkUsuario: 'https://bet30.vin',
     linkAdmin: 'https://www.admin.online/',
   },
   19: {
     nombre: 'Bet30 Multi Black',
-    linkUsuario: null,
-    linkAdmin: 'https://admin.bet30.host',
+    linkUsuario: 'Solicitar lista Actualizada',
+    linkAdmin: 'https://admin.bet30.fans',
   },
   20: {
     nombre: 'Bet91 MultiSkin',
-    linkUsuario: null,
+    linkUsuario: 'Solicitar lista Actualizada',
     linkAdmin: null,
   },
   21: {
     nombre: 'Betcoin',
-    linkUsuario: null,
+    linkUsuario: 'Solicitar lista Actualizada',
     linkAdmin: null,
   },
   22: {
     nombre: 'CamelBet',
-    linkUsuario: null,
+    linkUsuario: 'https://camelbet40.com',
     linkAdmin: 'https://www.admin.online/',
   },
   23: {
     nombre: 'Casino33',
-    linkUsuario: null,
+    linkUsuario: 'https://Casino33.vin',
     linkAdmin: 'https://www.admin.online/',
   },
   24: {
@@ -100,22 +100,22 @@ export const PLATFORM_LINKS = {
   },
   25: {
     nombre: 'Casino Zeta',
-    linkUsuario: null,
+    linkUsuario: 'https://casinozeta40.com',
     linkAdmin: 'https://www.admin.online/',
   },
   26: {
     nombre: 'Casino Zeus',
-    linkUsuario: null,
+    linkUsuario: 'https://casinozeus40.com',
     linkAdmin: 'https://www.admin.online/',
   },
   27: {
     nombre: 'CeluApuestas',
-    linkUsuario: null,
+    linkUsuario: 'https://celuapuestas40.com',
     linkAdmin: 'https://www.admin.online/',
   },
   28: {
     nombre: 'CleopatraBet',
-    linkUsuario: 'https://www.cleopatrabet14.ws/',
+    linkUsuario: 'https://Cleopatrabet34.ws',
     linkAdmin: 'https://www.admin.online/',
   },
   29: {
@@ -125,28 +125,28 @@ export const PLATFORM_LINKS = {
   },
   30: {
     nombre: 'El Joker',
-    linkUsuario: null,
+    linkUsuario: 'Solicitar lista Actualizada',
     linkAdmin: null,
   },
   31: {
     nombre: 'Flow Bet',
-    linkUsuario: null,
-    linkAdmin: null,
+    linkUsuario: 'Próximamente',
+    linkAdmin: 'Próximamente',
   },
   32: {
     nombre: 'Fortubet',
-    linkUsuario: 'https://Fortubet14.ws',
-    linkAdmin: 'https://bo.casinoenvivo.club/',
+    linkUsuario: 'https://fortubet40.com',
+    linkAdmin: 'https://www.admin.online/',
   },
   33: {
     nombre: 'Ganamos Panel Blanco',
-    linkUsuario: 'https://www.ganamosnet30.com/',
-    linkAdmin: 'https://www.agentesbet.net/',
+    linkUsuario: 'https://Ganamosnet40.com',
+    linkAdmin: 'https://www.admin.online/',
   },
   34: {
-    nombre: 'Ganamos 365',
-    linkUsuario: null,
-    linkAdmin: null,
+    nombre: 'Ganamos365',
+    linkUsuario: 'https://ganamos365.life',
+    linkAdmin: 'https://admin.ganamos365.life/',
   },
   35: {
     nombre: 'Ganemos',
@@ -155,12 +155,12 @@ export const PLATFORM_LINKS = {
   },
   36: {
     nombre: 'Gran Poseidon',
-    linkUsuario: 'https://granposeidon.co/',
-    linkAdmin: 'https://admin.granposeidon.co',
+    linkUsuario: 'https://granposeidon.info',
+    linkAdmin: 'https://admin.granposeidon.info',
   },
   37: {
     nombre: 'Imperio Bet',
-    linkUsuario: 'https://imperiobet.club/',
+    linkUsuario: 'https://imperiobet.club',
     linkAdmin: 'https://agents.imperiobet.club/',
   },
   38: {
@@ -175,7 +175,7 @@ export const PLATFORM_LINKS = {
   },
   40: {
     nombre: 'MagiPlay',
-    linkUsuario: 'https://www.magiplay30.ws/',
+    linkUsuario: 'https://Magiplay34.ws',
     linkAdmin: 'https://www.admin.online',
   },
   41: {
@@ -190,17 +190,17 @@ export const PLATFORM_LINKS = {
   },
   43: {
     nombre: 'Pampa Bet',
-    linkUsuario: null,
-    linkAdmin: null,
+    linkUsuario: 'Próximamente',
+    linkAdmin: 'Próximamente',
   },
   44: {
     nombre: 'Pampa Casino',
-    linkUsuario: null,
+    linkUsuario: 'Solicitar link',
     linkAdmin: 'https://www.admin.online/',
   },
   45: {
     nombre: 'Planeta32',
-    linkUsuario: 'https://planeta32.vip/',
+    linkUsuario: 'https://Vip32.vip',
     linkAdmin: 'https://www.admin.online/login',
   },
   46: {
@@ -220,48 +220,178 @@ export const PLATFORM_LINKS = {
   },
   49: {
     nombre: 'Submarino',
-    linkUsuario: null,
+    linkUsuario: 'Proximamente',
     linkAdmin: 'https://www.admin.online/',
   },
   50: {
     nombre: 'Tango30',
     linkUsuario: 'https://www.tango30.vin/',
-    linkAdmin: 'https://www.admin.online/login',
+    linkAdmin: 'https://www.admin.online',
   },
   51: {
     nombre: 'Tribet Casino VIP',
-    linkUsuario: 'https://tribetcasino.com/',
-    linkAdmin: 'https://admin.tribetcasino.com/',
+    linkUsuario: 'Proximamente',
+    linkAdmin: 'Proximamente',
   },
   52: {
     nombre: 'Tribet Pro',
-    linkUsuario: null,
-    linkAdmin: null,
+    linkUsuario: 'Proximamente',
+    linkAdmin: 'Proximamente',
   },
   53: {
     nombre: 'Tucan30',
-    linkUsuario: null,
+    linkUsuario: 'Próximamente',
     linkAdmin: 'https://www.admin.online/',
   },
   54: {
     nombre: 'Tiger Ganamos',
-    linkUsuario: 'https://casinotiger.org/',
-    linkAdmin: 'https://admin.casinotiger.org/',
+    linkUsuario: 'Proximamente',
+    linkAdmin: 'Proximamente',
   },
   55: {
     nombre: 'Picante Sports',
-    linkUsuario: 'http://picantesports.org',
-    linkAdmin: 'http://admin.picantesports.org',
+    linkUsuario: 'Proximamente',
+    linkAdmin: 'Proximamente',
   },
   56: {
     nombre: 'Torre VIP',
-    linkUsuario: 'https://torrevip.net/',
+    linkUsuario: 'https://torrevip.net',
     linkAdmin: 'https://admin.torrevip.net',
   },
   57: {
     nombre: 'Venezia30',
-    linkUsuario: null,
+    linkUsuario: 'Proximamente',
     linkAdmin: 'https://www.admin.online/',
+  },
+  58: {
+    nombre: 'Bet30eu',
+    linkUsuario: 'https://bet30.vc',
+    linkAdmin: null,
+  },
+  59: {
+    nombre: 'Ganaencasa',
+    linkUsuario: 'https://Ganaencasa40.com',
+    linkAdmin: 'https://www.admin.online/',
+  },
+  60: {
+    nombre: 'TrebolBet',
+    linkUsuario: 'https://Trebol34.ws',
+    linkAdmin: 'https://www.admin.online/',
+  },
+  61: {
+    nombre: 'CasinoFenix',
+    linkUsuario: 'https://Casinofenix34.vip',
+    linkAdmin: 'https://www.admin.online/',
+  },
+  62: {
+    nombre: 'Vip32',
+    linkUsuario: 'Proximamente',
+    linkAdmin: 'Proximamente',
+  },
+  63: {
+    nombre: 'HouseRock',
+    linkUsuario: 'https://houserocks.uno',
+    linkAdmin: 'https://admin.houserocks.uno',
+  },
+  64: {
+    nombre: 'OasisNet',
+    linkUsuario: 'https://oasisnet.app',
+    linkAdmin: 'https://admin.oasisnet.app',
+  },
+  65: {
+    nombre: 'ThorNet',
+    linkUsuario: 'https://thornet.uno',
+    linkAdmin: 'https://admin.thornet.uno',
+  },
+  66: {
+    nombre: 'ZonaGold',
+    linkUsuario: 'https://zonagold.vip',
+    linkAdmin: 'https://admin.zonagold.vip',
+  },
+  67: {
+    nombre: 'GreenBet',
+    linkUsuario: 'https://greenbet.uno',
+    linkAdmin: 'https://admin.greenbet.uno',
+  },
+  68: {
+    nombre: 'Millonarios',
+    linkUsuario: 'https://millonarios.digital',
+    linkAdmin: 'https://admin.millonarios.digital',
+  },
+  69: {
+    nombre: 'Ajugar',
+    linkUsuario: 'https://ajugar.tech',
+    linkAdmin: 'https://admin.ajugar.tech',
+  },
+  70: {
+    nombre: 'OlympusCasino',
+    linkUsuario: 'https://olympuscasino.games',
+    linkAdmin: 'https://admin.olympuscasino.games',
+  },
+  71: {
+    nombre: 'Multi PRO',
+    linkUsuario: 'Solicitar Lista',
+    linkAdmin: 'https://admin.multi-panel.pro/user',
+  },
+  72: {
+    nombre: 'Multi SinRecupero',
+    linkUsuario: 'Solicitar Lista',
+    linkAdmin: 'https://admin.sinrecupero.lat/user',
+  },
+  73: {
+    nombre: 'Multi Predador',
+    linkUsuario: 'Solicitar Lista',
+    linkAdmin: 'https://www.predador.net/agentsControl',
+  },
+  74: {
+    nombre: 'Multi Dados',
+    linkUsuario: 'Solicitar Lista',
+    linkAdmin: 'https://admin.agentesadmin.bet',
+  },
+  75: {
+    nombre: 'Multi Global',
+    linkUsuario: 'Solicitar Lista',
+    linkAdmin: 'https://agentes.multiglobal.fun',
+  },
+  76: {
+    nombre: 'Multi AgentesBet',
+    linkUsuario: 'Solicitar Lista',
+    linkAdmin: 'https://admin.agentesadmin.lat',
+  },
+  77: {
+    nombre: 'LemonBet',
+    linkUsuario: 'https://lemonbet.top',
+    linkAdmin: 'https://admin.lemonbet.top',
+  },
+  78: {
+    nombre: 'ReydeReyes',
+    linkUsuario: 'https://reydereyes.club',
+    linkAdmin: 'https://admin.reydereyes.club',
+  },
+  79: {
+    nombre: '365online',
+    linkUsuario: 'https://365online.club',
+    linkAdmin: 'https://admin.365online.club',
+  },
+  80: {
+    nombre: 'Ganamos CC',
+    linkUsuario: 'https://ganamosnet.cc',
+    linkAdmin: 'https://agents.ganamosnet.cc',
+  },
+  81: {
+    nombre: 'Azar',
+    linkUsuario: 'https://azar247.com',
+    linkAdmin: 'https://admin.azar247.com',
+  },
+  82: {
+    nombre: 'Winns',
+    linkUsuario: 'https://winss.app',
+    linkAdmin: 'https://admin.winss.app',
+  },
+  83: {
+    nombre: 'Mika',
+    linkUsuario: 'https://mika.net.app',
+    linkAdmin: 'Solicitar link actualizado',
   },
 };
 
@@ -274,25 +404,29 @@ const normalizeName = (name = '') =>
 export function resolvePlatformLinks(producto) {
   if (!producto) return { linkUsuario: null, linkAdmin: null };
 
+  let matchedEntry = null;
+
   // 1. Check direct match by ID in PLATFORM_LINKS
   if (producto.id && PLATFORM_LINKS[producto.id]) {
-    const entry = PLATFORM_LINKS[producto.id];
-    return {
-      linkUsuario: producto.linkUsuario !== undefined ? producto.linkUsuario : entry.linkUsuario,
-      linkAdmin: producto.linkAdmin !== undefined ? producto.linkAdmin : entry.linkAdmin,
-    };
+    matchedEntry = PLATFORM_LINKS[producto.id];
+  } else {
+    // 2. Fallback check by normalized name
+    const nameNorm = normalizeName(producto.nombre);
+    matchedEntry = Object.values(PLATFORM_LINKS).find(
+      (entry) => normalizeName(entry.nombre) === nameNorm,
+    );
   }
-
-  // 2. Fallback check by normalized name
-  const nameNorm = normalizeName(producto.nombre);
-  const matchedEntry = Object.values(PLATFORM_LINKS).find(
-    (entry) => normalizeName(entry.nombre) === nameNorm,
-  );
 
   if (matchedEntry) {
     return {
-      linkUsuario: producto.linkUsuario !== undefined ? producto.linkUsuario : matchedEntry.linkUsuario,
-      linkAdmin: producto.linkAdmin !== undefined ? producto.linkAdmin : matchedEntry.linkAdmin,
+      linkUsuario:
+        matchedEntry.linkUsuario !== undefined && matchedEntry.linkUsuario !== null
+          ? matchedEntry.linkUsuario
+          : producto.linkUsuario || null,
+      linkAdmin:
+        matchedEntry.linkAdmin !== undefined && matchedEntry.linkAdmin !== null
+          ? matchedEntry.linkAdmin
+          : producto.linkAdmin || null,
     };
   }
 
