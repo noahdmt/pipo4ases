@@ -35,7 +35,7 @@ export default function Navbar({
             tabIndex={0}
             onKeyDown={(e) => e.key === 'Enter' && handleCategoriaChange('todas')}
           >
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#2563EB] to-[#FACC15] opacity-40 blur-md transition duration-300 group-hover:opacity-80"></div>
+            <div className="absolute -inset-1 rounded-full bg-linear-to-r from-[#2563EB] to-[#FACC15] opacity-40 blur-md transition duration-300 group-hover:opacity-80"></div>
             <img
               src={logoPipo}
               alt="Logo Pipo 4 Ases"
@@ -49,7 +49,7 @@ export default function Navbar({
             <span className="text-[0.75rem] font-black uppercase leading-tight tracking-[0.12em] sm:text-base sm:tracking-[0.2em]">
               PIPO <span className={modoDescanso ? 'text-white' : 'text-[#FACC15] drop-shadow-[0_0_8px_rgba(250,204,21,0.4)]'}>4 ASES</span>
             </span>
-            <span className="text-[8.5px] font-bold uppercase tracking-[0.10em] text-slate-400 sm:text-[10px] sm:tracking-[0.18em]">
+            <span className="text-[8.5px] font-bold uppercase tracking-widest text-slate-400 sm:text-[10px] sm:tracking-[0.18em]">
               4 AÑOS EN EL MERCADO
             </span>
           </div>
