@@ -1,5 +1,6 @@
 import imagenFallback from '../assets/argenbet.webp';
 import { Home, Gamepad2 } from 'lucide-react';
+import { resolvePlatformLinks } from './platformLinks';
 
 const imagenesDisponibles = import.meta.glob('../assets/*.webp', {
   eager: true,
@@ -1431,10 +1432,15 @@ const rawProductos = [
 ];
 
 export const productos = [...rawProductos]
-  .map((producto) => ({
-    ...producto,
-    imagen: getImageByProductName(producto.nombre),
-  }))
+  .map((producto) => {
+    const links = resolvePlatformLinks(producto);
+    return {
+      ...producto,
+      linkUsuario: links.linkUsuario,
+      linkAdmin: links.linkAdmin,
+      imagen: getImageByProductName(producto.nombre),
+    };
+  })
   .sort((a, b) =>
     a.nombre.localeCompare(b.nombre, 'es', { sensitivity: 'base' }),
   );
