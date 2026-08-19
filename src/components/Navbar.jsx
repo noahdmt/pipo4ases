@@ -43,7 +43,7 @@ export default function Navbar({
 
        <nav
          aria-label="Categorías de productos"
-         className={`order-3 flex min-w-0 w-full items-center justify-center gap-1 rounded-full border p-1 sm:order-0 sm:w-auto ${
+         className={`order-3 hidden sm:flex min-w-0 w-full items-center justify-center gap-1 rounded-full border p-1 sm:order-0 sm:w-auto ${
            modoDescanso ? 'border-slate-700/60 bg-[#101b2d]' : 'border-[#2563EB]/20 bg-[#0d1728]'
          }`}
        >
