@@ -1,7 +1,43 @@
 /**
  * Módulo de utilidades de seguridad para la aplicación Frontend.
- * Proporciona funciones de sanitización contra inyecciones XSS y validación de esquemas URI.
+ * Proporciona funciones de sanitización contra inyecciones XSS, neutralización de SQLi en búsquedas,
+ * escape HTML y validación de esquemas y orígenes URI.
  */
+
+/**
+ * Escapa caracteres HTML especiales para prevenir inyecciones XSS en renderizados dinámicos.
+ * @param {string} str - Cadena de texto a escapar.
+ * @returns {string} - Texto con caracteres HTML escapados.
+ */
+export function escapeHTML(str) {
+  if (typeof str !== 'string') return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;')
+    .replace(/\//g, '&#x2F;');
+}
+
+/**
+ * Sanitiza y neutraliza patrones sospechosos de inyección SQL (SQLi) e inyecciones de comandos en búsquedas.
+ * @param {string} query - Término de búsqueda ingresado por el usuario.
+ * @returns {string} - Término de búsqueda limpio y seguro.
+ */
+export function sanitizeSearchQuery(query) {
+  if (typeof query !== 'string') return '';
+  
+  // 1. Eliminar caracteres de control ASCII
+  // eslint-disable-next-line no-control-regex
+  let clean = query.replace(/[\x00-\x1F\x7F]/g, '');
+
+  // 2. Neutralizar comentarios SQL y metacaracteres peligrosos (--; /* */; ' OR '1'='1)
+  clean = clean.replace(/(--|\/\*|\*\/|;|'|"|\\)/g, '');
+
+  // 3. Recortar espacios y limitar la longitud a un máximo razonable (100 caracteres)
+  return clean.trim().slice(0, 100);
+}
 
 /**
  * Sanitiza y valida una URL para evitar ataques XSS por esquemas maliciosos (ej. javascript:, data:, vbscript:).
@@ -25,14 +61,18 @@ export function sanitizeUrl(url, fallback = '#') {
   // Bloquear esquemas peligrosos conocidos (case-insensitive)
   const isDangerousScheme = /^(javascript|data|vbscript|file):/i.test(normalizedUrl);
   if (isDangerousScheme) {
-    console.warn(`[Security Alert] Esquema URI no seguro bloqueado: ${normalizedUrl.slice(0, 30)}...`);
+    if (import.meta.env?.DEV) {
+      console.warn(`[Security Alert] Esquema URI no seguro bloqueado: ${normalizedUrl.slice(0, 30)}...`);
+    }
     return fallback;
   }
 
   // Permitir protocolos seguros estándar
   const isAllowedScheme = /^(https?:|mailto:|tel:|\/|#)/i.test(normalizedUrl);
   if (!isAllowedScheme) {
-    console.warn(`[Security Alert] Enlace rechazado por protocolo no permitido: ${normalizedUrl.slice(0, 30)}...`);
+    if (import.meta.env?.DEV) {
+      console.warn(`[Security Alert] Enlace rechazado por protocolo no permitido: ${normalizedUrl.slice(0, 30)}...`);
+    }
     return fallback;
   }
 
@@ -67,4 +107,21 @@ export function buildWhatsAppLink(phone, message = '') {
 
   const encodedMessage = encodeURIComponent(sanitizeInput(message));
   return sanitizeUrl(`${baseUrl}?text=${encodedMessage}`);
+}
+
+/**
+ * Verifica si un origen URL dado cumple con la política CORS y lista blanca de dominios permitidos.
+ * @param {string} origin - El origen a validar (ej. https://wa.me).
+ * @param {string[]} allowedOrigins - Lista de dominios/orígenes autorizados.
+ * @returns {boolean} - true si el origen es válido.
+ */
+export function isAllowedOrigin(origin, allowedOrigins = ['wa.me', 'whatsapp.com', 'fonts.googleapis.com']) {
+  if (!origin || typeof origin !== 'string') return false;
+
+  try {
+    const parsed = new URL(origin.startsWith('http') ? origin : `https://${origin}`);
+    return allowedOrigins.some((domain) => parsed.hostname === domain || parsed.hostname.endsWith(`.${domain}`));
+  } catch {
+    return false;
+  }
 }

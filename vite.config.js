@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  // Hardening de seguridad para despojar logs y debugger en compilación con OXC (Vite 8)
+  // Hardening de seguridad para despojar logs y debugger en compilación de producción con OXC
   oxc: {
     drop: ['console', 'debugger'],
   },
