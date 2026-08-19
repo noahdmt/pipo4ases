@@ -48,12 +48,12 @@ const rawProductos = [
     esNaranja: true,
     linkUsuario: 'https://argenbet.io',
     linkAdmin: 'https://admin.argenbet.io',
-    detalles: [
-      'Escala progresiva de bonificación por volumen', 
-      'Sin comisión por recarga inicial', 
-      'Panel de control personalizado 24hs', 
-      'Soporte técnico preferencial vía WhatsApp'
-    ],
+    // detalles: [
+    //   'Escala progresiva de bonificación por volumen', 
+    //   'Sin comisión por recarga inicial', 
+    //   'Panel de control personalizado 24hs', 
+    //   'Soporte técnico preferencial vía WhatsApp'
+    // ],
     paquetes: [
       // { inversion: 14000, fichas: 65000 },
       // { inversion: 27000, fichas: 130000 },
@@ -79,12 +79,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.konabet30.ws/',
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco orientado a casinos premium',
-      'Múltiples paquetes de fichas y volumen',
-      'Formato Argentina · ARS',
-      'Atención directa para alta demanda'
-    ],
+    // detalles: [
+    //   'Panel blanco orientado a casinos premium',
+    //   'Múltiples paquetes de fichas y volumen',
+    //   'Formato Argentina · ARS',
+    //   'Atención directa para alta demanda'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -108,12 +108,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://apostamos.shop/',
     linkAdmin: 'https://agents.apostamos.shop/',
-    detalles: [
-      'Red ganamos y volumen escalable',
-      'Paquete de entrada accesible',
-      'Argentina · ARS',
-      'Estructura ideal para revendedores'
-    ],
+    // detalles: [
+    //   'Red ganamos y volumen escalable',
+    //   'Paquete de entrada accesible',
+    //   'Argentina · ARS',
+    //   'Estructura ideal para revendedores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 210000 },
       { inversion: 52000, fichas: 285000 },
@@ -137,12 +137,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://megafaraon.vip/',
     linkAdmin: 'https://admin.megafaraon.vip/auth/login',
-    detalles: [
-      'Rama ganamos con foco en volumen',
-      'Operación estable y moderna',
-      'Argentina · ARS',
-      'Ideal para distribución masiva'
-    ],
+    // detalles: [
+    //   'Rama ganamos con foco en volumen',
+    //   'Operación estable y moderna',
+    //   'Argentina · ARS',
+    //   'Ideal para distribución masiva'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 208000 },
       { inversion: 54000, fichas: 285000 },
@@ -166,12 +166,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://oropuro.online/',
     linkAdmin: 'https://admin.oropuro.online/',
-    detalles: [
-      'Tecnología enfocada en rendimiento',
-      'Paquetes con alto volumen',
-      'Argentina · ARS',
-      'Disponibilidad y continuidad operativa'
-    ],
+    // detalles: [
+    //   'Tecnología enfocada en rendimiento',
+    //   'Paquetes con alto volumen',
+    //   'Argentina · ARS',
+    //   'Disponibilidad y continuidad operativa'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 240000 },
       { inversion: 52000, fichas: 320000 },
@@ -193,12 +193,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://pinaplay.net/',
     linkAdmin: 'https://agents.pinaplay.net/',
-    detalles: [
-      'Paquetes optimizados para volumen',
-      'Buena relación precio y fichas',
-      'Argentina · ARS',
-      'Ideal para crecimiento estable'
-    ],
+    // detalles: [
+    //   'Paquetes optimizados para volumen',
+    //   'Buena relación precio y fichas',
+    //   'Argentina · ARS',
+    //   'Ideal para crecimiento estable'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 174000 },
       { inversion: 52000, fichas: 232000 },
@@ -220,12 +220,12 @@ const rawProductos = [
     esNaranja: true,
     linkUsuario: 'https://jugamos.lat',
     linkAdmin: 'https://agentes.jugamos.lat/',
-    detalles: [
-      'Multipanel con amplitud de volumen',
-      'Enfoque en mayoristas y revendedores',
-      'Argentina · ARS',
-      'Modelo con gran variedad de carga'
-    ],
+    // detalles: [
+    //   'Multipanel con amplitud de volumen',
+    //   'Enfoque en mayoristas y revendedores',
+    //   'Argentina · ARS',
+    //   'Modelo con gran variedad de carga'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 240000 },
       { inversion: 52000, fichas: 330000 },
@@ -252,12 +252,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://ganamosvip.co/',
     linkAdmin: 'https://admin.ganamosvip.co/',
-    detalles: [
-      'Red ganamos con enfoque premium',
-      'Packs con buena escala operativa',
-      'Argentina · ARS',
-      'Estructura para distribución y revendedores'
-    ],
+    // detalles: [
+    //   'Red ganamos con enfoque premium',
+    //   'Packs con buena escala operativa',
+    //   'Argentina · ARS',
+    //   'Estructura para distribución y revendedores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 200000 },
       { inversion: 52000, fichas: 268000 },
@@ -279,12 +279,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://ganaencasavip.org/',
     linkAdmin: 'https://admin.ganaencasavip.org/',
-    detalles: [
-      'MultiSkin y red ganamos',
-      'Paquetes con gran capacidad de inversión',
-      'Argentina · ARS',
-      'Plataforma de crecimiento sostenido'
-    ],
+    // detalles: [
+    //   'MultiSkin y red ganamos',
+    //   'Paquetes con gran capacidad de inversión',
+    //   'Argentina · ARS',
+    //   'Plataforma de crecimiento sostenido'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 208000 },
       { inversion: 54000, fichas: 285000 },
@@ -308,12 +308,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://ganamosnet.org',
     linkAdmin: 'https://agents.ganamosnet.org',
-    detalles: [
-      'Ganamos original y red ganamos',
-      'Gran variedad de paquetes',
-      'Argentina · ARS',
-      'Apto para distribución y operadores'
-    ],
+    // detalles: [
+    //   'Ganamos original y red ganamos',
+    //   'Gran variedad de paquetes',
+    //   'Argentina · ARS',
+    //   'Apto para distribución y operadores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 174000 },
       { inversion: 52000, fichas: 235000 },
@@ -337,12 +337,12 @@ const rawProductos = [
     esNaranja: true,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco tipo premium',
-      'Múltiples niveles de fichas',
-      'País no informado · N/A',
-      'Operación adaptada a revendedores'
-    ],
+    // detalles: [
+    //   'Panel blanco tipo premium',
+    //   'Múltiples niveles de fichas',
+    //   'País no informado · N/A',
+    //   'Operación adaptada a revendedores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -366,12 +366,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://admin.bet30.host',
-    detalles: [
-      'Multi panel con variedad funcional',
-      'Paquetes de perfil medio-alto',
-      'Argentina · ARS',
-      'Ideal para crecimiento sostenido'
-    ],
+    // detalles: [
+    //   'Multi panel con variedad funcional',
+    //   'Paquetes de perfil medio-alto',
+    //   'Argentina · ARS',
+    //   'Ideal para crecimiento sostenido'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 171000 },
       { inversion: 52000, fichas: 228000 },
@@ -393,12 +393,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Multipanel con alto potencial',
-      'Datos de inversión escalables',
-      'Argentina · ARS',
-      'Estructura para operadores activos'
-    ],
+    // detalles: [
+    //   'Multipanel con alto potencial',
+    //   'Datos de inversión escalables',
+    //   'Argentina · ARS',
+    //   'Estructura para operadores activos'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 160000 },
       { inversion: 52000, fichas: 215000 },
@@ -422,12 +422,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Paquetes de entrada competitivos',
-      'Buenos niveles para distribuidoras',
-      'Argentina · ARS',
-      'Operación adaptable al volumen'
-    ],
+    // detalles: [
+    //   'Paquetes de entrada competitivos',
+    //   'Buenos niveles para distribuidoras',
+    //   'Argentina · ARS',
+    //   'Operación adaptable al volumen'
+    // ],
     paquetes: [
       { inversion: 37000, fichas: 130000 },
       { inversion: 48000, fichas: 173000 },
@@ -449,12 +449,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Paquetes altos de fichas',
-      'Argentina · ARS',
-      'Estructura para distribución comercial'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Paquetes altos de fichas',
+    //   'Argentina · ARS',
+    //   'Estructura para distribución comercial'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -478,12 +478,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco armado para volumen',
-      'Paquetes con buena escala',
-      'Argentina · ARS',
-      'Opción sólida para operadores'
-    ],
+    // detalles: [
+    //   'Panel blanco armado para volumen',
+    //   'Paquetes con buena escala',
+    //   'Argentina · ARS',
+    //   'Opción sólida para operadores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -507,12 +507,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://casinotiger.pro/',
     linkAdmin: 'https://adm.casinotiger.pro',
-    detalles: [
-      'Tribet original y activo',
-      'Paquetes para volumen sostenido',
-      'Argentina · ARS',
-      'Plataforma de buen posicionamiento'
-    ],
+    // detalles: [
+    //   'Tribet original y activo',
+    //   'Paquetes para volumen sostenido',
+    //   'Argentina · ARS',
+    //   'Plataforma de buen posicionamiento'
+    // ],
     paquetes: [
       { inversion: 33000, fichas: 105000 },
       { inversion: 40000, fichas: 150000 },
@@ -535,12 +535,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Fichas y volumen escalable',
-      'Argentina · ARS',
-      'Solución para mayoristas'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Fichas y volumen escalable',
+    //   'Argentina · ARS',
+    //   'Solución para mayoristas'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -564,12 +564,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Gran variedad de paquetes',
-      'Argentina · ARS',
-      'Operación para mayoristas y revendedores'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Gran variedad de paquetes',
+    //   'Argentina · ARS',
+    //   'Operación para mayoristas y revendedores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -593,12 +593,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Operación de panel blanco',
-      'Escalabilidad por volumen',
-      'Argentina · ARS',
-      'Rápida implementación'
-    ],
+    // detalles: [
+    //   'Operación de panel blanco',
+    //   'Escalabilidad por volumen',
+    //   'Argentina · ARS',
+    //   'Rápida implementación'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -622,12 +622,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.cleopatrabet14.ws/',
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco y red ganamos',
-      'Volumen flexible',
-      'Argentina · ARS',
-      'Modelo premium para operadores'
-    ],
+    // detalles: [
+    //   'Panel blanco y red ganamos',
+    //   'Volumen flexible',
+    //   'Argentina · ARS',
+    //   'Modelo premium para operadores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -651,12 +651,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.cocobongo30.win/',
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Múltiples niveles de inversión',
-      'Argentina · ARS',
-      'Estructura adaptable'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Múltiples niveles de inversión',
+    //   'Argentina · ARS',
+    //   'Estructura adaptable'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -678,12 +678,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Tribet replica con oferta variable',
-      'Consulta personalizada requerida',
-      'Argentina · ARS',
-      'Opción de especialidad en tribet'
-    ],
+    // detalles: [
+    //   'Tribet replica con oferta variable',
+    //   'Consulta personalizada requerida',
+    //   'Argentina · ARS',
+    //   'Opción de especialidad en tribet'
+    // ],
     paquetes: [],
   },
   {
@@ -698,12 +698,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Plataforma casino con array de inversión',
-      'Paquetes desde nivel inicial',
-      'Argentina · ARS',
-      'Estructura funcional para revendedores'
-    ],
+    // detalles: [
+    //   'Plataforma casino con array de inversión',
+    //   'Paquetes desde nivel inicial',
+    //   'Argentina · ARS',
+    //   'Estructura funcional para revendedores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 165000 },
       { inversion: 54000, fichas: 220000 },
@@ -725,12 +725,12 @@ const rawProductos = [
     esNaranja: true,
     linkUsuario: 'https://Fortubet14.ws',
     linkAdmin: 'https://bo.casinoenvivo.club/',
-    detalles: [
-      'Panel blanco premium',
-      'Paquetes con alto volumen',
-      'Argentina · ARS',
-      'Excelente para revendedor premium'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Paquetes con alto volumen',
+    //   'Argentina · ARS',
+    //   'Excelente para revendedor premium'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -754,12 +754,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.ganamosnet30.com/',
     linkAdmin: 'https://www.agentesbet.net/',
-    detalles: [
-      'Panel blanco y crecimiento escalado',
-      'Paquetes desde nivel inicial',
-      'Argentina · ARS',
-      'Solución orientada a revendedores'
-    ],
+    // detalles: [
+    //   'Panel blanco y crecimiento escalado',
+    //   'Paquetes desde nivel inicial',
+    //   'Argentina · ARS',
+    //   'Solución orientada a revendedores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 210000 },
       { inversion: 52000, fichas: 280000 },
@@ -783,12 +783,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Opción de casino con variedad de paquetes',
-      'Volumen problema/solución',
-      'Argentina · ARS',
-      'Plataforma premium para operación local'
-    ],
+    // detalles: [
+    //   'Opción de casino con variedad de paquetes',
+    //   'Volumen problema/solución',
+    //   'Argentina · ARS',
+    //   'Plataforma premium para operación local'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 192000 },
       { inversion: 52000, fichas: 256000 },
@@ -810,12 +810,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://ganemos.io/',
     linkAdmin: null,
-    detalles: [
-      'Replica con enfoque comercial',
-      'Paquetes y crecimiento moderado',
-      'Argentina · ARS',
-      'Adecuado para operadores activos'
-    ],
+    // detalles: [
+    //   'Replica con enfoque comercial',
+    //   'Paquetes y crecimiento moderado',
+    //   'Argentina · ARS',
+    //   'Adecuado para operadores activos'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 195000 },
       { inversion: 52000, fichas: 260000 },
@@ -836,12 +836,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://granposeidon.co/',
     linkAdmin: 'https://admin.granposeidon.co',
-    detalles: [
-      'Tribet replica y volumen flexible',
-      'Paquetes para operadores activos',
-      'Argentina · ARS',
-      'Operación estable y con crecimiento'
-    ],
+    // detalles: [
+    //   'Tribet replica y volumen flexible',
+    //   'Paquetes para operadores activos',
+    //   'Argentina · ARS',
+    //   'Operación estable y con crecimiento'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 211000 },
       { inversion: 52000, fichas: 281000 },
@@ -863,12 +863,12 @@ const rawProductos = [
     esNaranja: true,
     linkUsuario: 'https://imperiobet.club/',
     linkAdmin: 'https://agents.imperiobet.club/',
-    detalles: [
-      'Exclusiva 4ASES',
-      'Paquetes con gran volumen',
-      'Argentina · ARS',
-      'Formato premium y particular'
-    ],
+    // detalles: [
+    //   'Exclusiva 4ASES',
+    //   'Paquetes con gran volumen',
+    //   'Argentina · ARS',
+    //   'Formato premium y particular'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 192000 },
       { inversion: 52000, fichas: 256000 },
@@ -890,12 +890,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.kadal30.ws/',
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Variedad de paquetes comercialmente útiles',
-      'Argentina · ARS',
-      'Opportunidad para mayoristas'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Variedad de paquetes comercialmente útiles',
+    //   'Argentina · ARS',
+    //   'Opportunidad para mayoristas'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -917,12 +917,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Casino con estructura de inversión flexible',
-      'Paquetes de salida adaptable',
-      'Argentina · ARS',
-      'Útil para operadores con ritmo constante'
-    ],
+    // detalles: [
+    //   'Casino con estructura de inversión flexible',
+    //   'Paquetes de salida adaptable',
+    //   'Argentina · ARS',
+    //   'Útil para operadores con ritmo constante'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 214000 },
       { inversion: 54000, fichas: 286000 },
@@ -944,12 +944,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.magiplay30.ws/',
     linkAdmin: 'https://www.admin.online',
-    detalles: [
-      'Panel blanco premium',
-      'Paquetes robustos',
-      'Argentina · ARS',
-      'Solución para operadores máximos'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Paquetes robustos',
+    //   'Argentina · ARS',
+    //   'Solución para operadores máximos'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -971,12 +971,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://movilbets.com/',
     linkAdmin: 'https://admin.movilbets.com/',
-    detalles: [
-      'Costo base con variedad de fichas',
-      'Paquetes de crecimiento típico',
-      'Argentina · ARS',
-      'Buena opción para operación continua'
-    ],
+    // detalles: [
+    //   'Costo base con variedad de fichas',
+    //   'Paquetes de crecimiento típico',
+    //   'Argentina · ARS',
+    //   'Buena opción para operación continua'
+    // ],
     paquetes: [
       { inversion: 33000, fichas: 102000 },
       { inversion: 43000, fichas: 144000 },
@@ -998,12 +998,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.mundocasino30.win/',
     linkAdmin: 'https://www.admin.online/login',
-    detalles: [
-      'Panel blanco competitivo',
-      'Fichas muy bien dimensionadas',
-      'Argentina · ARS',
-      'Ideal para mayoristas y complejos'
-    ],
+    // detalles: [
+    //   'Panel blanco competitivo',
+    //   'Fichas muy bien dimensionadas',
+    //   'Argentina · ARS',
+    //   'Ideal para mayoristas y complejos'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -1025,12 +1025,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Casino orientado a volumen',
-      'Paquetes de inversión escalados',
-      'Argentina · ARS',
-      'Estructura para distribuidores locales'
-    ],
+    // detalles: [
+    //   'Casino orientado a volumen',
+    //   'Paquetes de inversión escalados',
+    //   'Argentina · ARS',
+    //   'Estructura para distribuidores locales'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 171000 },
       { inversion: 52000, fichas: 228000 },
@@ -1052,12 +1052,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco competitivo',
-      'Variedad de fichas por inversión',
-      'Argentina · ARS',
-      'Opción muy útil para distribuidores'
-    ],
+    // detalles: [
+    //   'Panel blanco competitivo',
+    //   'Variedad de fichas por inversión',
+    //   'Argentina · ARS',
+    //   'Opción muy útil para distribuidores'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -1079,12 +1079,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://planeta32.vip/',
     linkAdmin: 'https://www.admin.online/login',
-    detalles: [
-      'Red ganamos con buena escala',
-      'Paquetes versátiles',
-      'Argentina · ARS',
-      'Excelente para operación multinivel'
-    ],
+    // detalles: [
+    //   'Red ganamos con buena escala',
+    //   'Paquetes versátiles',
+    //   'Argentina · ARS',
+    //   'Excelente para operación multinivel'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -1106,12 +1106,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://playclub.fun/',
     linkAdmin: 'https://admin.playclub.fun/',
-    detalles: [
-      'Tribet replica con nivel de servicio',
-      'Disponible para alta demanda',
-      'Argentina · ARS',
-      'Modelo con buena continuidad'
-    ],
+    // detalles: [
+    //   'Tribet replica con nivel de servicio',
+    //   'Disponible para alta demanda',
+    //   'Argentina · ARS',
+    //   'Modelo con buena continuidad'
+    // ],
     paquetes: [
       { inversion: 33500, fichas: 120000 },
       { inversion: 42000, fichas: 165000 },
@@ -1133,12 +1133,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.qsuertudo.com',
     linkAdmin: 'https://admin.qsuertudo.com',
-    detalles: [
-      'Tribet original y estable',
-      'Volumen y paquetes variados',
-      'Argentina · ARS',
-      'Muy útil para operadores activo'
-    ],
+    // detalles: [
+    //   'Tribet original y estable',
+    //   'Volumen y paquetes variados',
+    //   'Argentina · ARS',
+    //   'Muy útil para operadores activo'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 140000 },
       { inversion: 54000, fichas: 188000 },
@@ -1160,12 +1160,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.sector30.bet/',
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco y volumen flexible',
-      'Paquetes adaptados a operador',
-      'Argentina · ARS',
-      'Bajo costo de entrada'
-    ],
+    // detalles: [
+    //   'Panel blanco y volumen flexible',
+    //   'Paquetes adaptados a operador',
+    //   'Argentina · ARS',
+    //   'Bajo costo de entrada'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -1187,12 +1187,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Paquetes de gran volumen',
-      'Argentina · ARS',
-      'Modelo para distribución local'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Paquetes de gran volumen',
+    //   'Argentina · ARS',
+    //   'Modelo para distribución local'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },
@@ -1216,12 +1216,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://www.tango30.vin/',
     linkAdmin: 'https://www.admin.online/login',
-    detalles: [
-      'Panel blanco con gran capacidad',
-      'Paquetes premium y escalables',
-      'Argentina · ARS',
-      'Colección de volumen alto'
-    ],
+    // detalles: [
+    //   'Panel blanco con gran capacidad',
+    //   'Paquetes premium y escalables',
+    //   'Argentina · ARS',
+    //   'Colección de volumen alto'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 240000 },
@@ -1243,12 +1243,12 @@ const rawProductos = [
     esNaranja: true,
     linkUsuario: 'https://tribetcasino.com/',
     linkAdmin: 'https://admin.tribetcasino.com/',
-    detalles: [
-      'Tribet VIP premium',
-      'Red ganamos y volumen fuerte',
-      'Argentina · ARS',
-      'Excelente para revendedor premium'
-    ],
+    // detalles: [
+    //   'Tribet VIP premium',
+    //   'Red ganamos y volumen fuerte',
+    //   'Argentina · ARS',
+    //   'Excelente para revendedor premium'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 204000 },
       { inversion: 54000, fichas: 272000 },
@@ -1270,12 +1270,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: null,
-    detalles: [
-      'Casino con estructura clara',
-      'Paquetes para crecimiento progresivo',
-      'Argentina · ARS',
-      'Muy útil para distribuidores locales'
-    ],
+    // detalles: [
+    //   'Casino con estructura clara',
+    //   'Paquetes para crecimiento progresivo',
+    //   'Argentina · ARS',
+    //   'Muy útil para distribuidores locales'
+    // ],
     paquetes: [
       { inversion: 33500, fichas: 120000 },
       { inversion: 42000, fichas: 165000 },
@@ -1297,12 +1297,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco y volumen robusto',
-      'Paquetes para revendedores',
-      'Argentina · ARS',
-      'Muy buenos niveles de fichas'
-    ],
+    // detalles: [
+    //   'Panel blanco y volumen robusto',
+    //   'Paquetes para revendedores',
+    //   'Argentina · ARS',
+    //   'Muy buenos niveles de fichas'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 195000 },
       { inversion: 52000, fichas: 260000 },
@@ -1326,12 +1326,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://casinotiger.org/',
     linkAdmin: 'https://admin.casinotiger.org/',
-    detalles: [
-      'Red ganamos con gran volumen',
-      'Paquetes para operador alto',
-      'Argentina · ARS',
-      'Rápida actividad comercial'
-    ],
+    // detalles: [
+    //   'Red ganamos con gran volumen',
+    //   'Paquetes para operador alto',
+    //   'Argentina · ARS',
+    //   'Rápida actividad comercial'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 204000 },
       { inversion: 54000, fichas: 272000 },
@@ -1353,12 +1353,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'http://picantesports.org',
     linkAdmin: 'http://admin.picantesports.org',
-    detalles: [
-      'Red ganamos y sport combinados',
-      'Múltiples niveles de fichas',
-      'Argentina · ARS',
-      'Muy enfocada en operación de casino'
-    ],
+    // detalles: [
+    //   'Red ganamos y sport combinados',
+    //   'Múltiples niveles de fichas',
+    //   'Argentina · ARS',
+    //   'Muy enfocada en operación de casino'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 204000 },
       { inversion: 54000, fichas: 272000 },
@@ -1380,12 +1380,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: 'https://torrevip.net/',
     linkAdmin: 'https://admin.torrevip.net',
-    detalles: [
-      'Torre VIP con gran capacidad',
-      'Alta escala y paquetes de inversión',
-      'Argentina · ARS',
-      'Apto para operadores grandes'
-    ],
+    // detalles: [
+    //   'Torre VIP con gran capacidad',
+    //   'Alta escala y paquetes de inversión',
+    //   'Argentina · ARS',
+    //   'Apto para operadores grandes'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 145200 },
       { inversion: 52000, fichas: 190300 },
@@ -1411,12 +1411,12 @@ const rawProductos = [
     esNaranja: false,
     linkUsuario: null,
     linkAdmin: 'https://www.admin.online/',
-    detalles: [
-      'Panel blanco premium',
-      'Paquetes con alto rango de fichas',
-      'Argentina · ARS',
-      'Ideal para mayoristas'
-    ],
+    // detalles: [
+    //   'Panel blanco premium',
+    //   'Paquetes con alto rango de fichas',
+    //   'Argentina · ARS',
+    //   'Ideal para mayoristas'
+    // ],
     paquetes: [
       { inversion: 40000, fichas: 190000 },
       { inversion: 54000, fichas: 260000 },

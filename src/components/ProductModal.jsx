@@ -25,13 +25,17 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
-    let closedByPopState = false;
+    let historyPushed = false;
 
-    // Push history state so mobile hardware/gesture back button closes modal instead of exiting page
-    window.history.pushState({ modalOpen: true }, '');
+    try {
+      window.history.pushState({ modalOpen: true }, '');
+      historyPushed = true;
+    } catch {
+      // ignore pushState errors
+    }
 
     const handlePopState = () => {
-      closedByPopState = true;
+      historyPushed = false;
       onClose();
     };
 
@@ -49,12 +53,15 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
       window.removeEventListener('popstate', handlePopState);
       window.removeEventListener('keydown', onKeyDown);
 
-      // Clean up history entry if closed programmatically (X button, backdrop click, Escape key, or bottom button)
-      if (!closedByPopState && window.history.state?.modalOpen) {
-        window.history.back();
+      if (historyPushed && window.history.state?.modalOpen) {
+        try {
+          window.history.back();
+        } catch {
+          // ignore back errors
+        }
       }
     };
-  }, [productoModal, onClose]);
+  }, [productoModal?.id]);
 
   const paquetesActuales = useMemo(() => productoModal?.paquetes || [], [productoModal]);
   const paqueteSel = useMemo(
@@ -240,7 +247,7 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
                 Cotización Personalizada
               </span>
               <p className="text-xs text-slate-300">
-                Este paquete requiere parametrización según el volumen solicitado. Consultá directamente con nuestro equipo comercial para obtener un presupuesto a medida.
+                Este paquete requiere parametrización según el volúmen solicitado. Consultá sobre los paquetes que tenemos armados para vos.
               </p>
             </div>
           )}

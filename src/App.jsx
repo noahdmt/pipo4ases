@@ -86,6 +86,8 @@ export default function App() {
     });
   }, [categoriaActiva, etiquetaSeleccionada, busqueda, favoritos, soloFavoritos]);
 
+  const handleCloseModal = useMemo(() => () => setProductoModal(null), []);
+
   return (
     <div
       className={`min-h-screen font-sans antialiased transition-colors duration-300 relative overflow-x-hidden flex flex-col justify-between ${
@@ -119,9 +121,8 @@ export default function App() {
         />
 
         <ProductModal
-          key={productoModal?.id || 'modal-closed'}
           productoModal={productoModal}
-          onClose={() => setProductoModal(null)}
+          onClose={handleCloseModal}
           modoDescanso={modoDescanso}
         />
 
