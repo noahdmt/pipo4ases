@@ -9,6 +9,7 @@ import {
   Copy,
   Check,
   MessageCircle,
+  ArrowLeft,
 } from 'lucide-react';
 import { sanitizeUrl, buildWhatsAppLink } from '../utils/security';
 import ProductImage from './ProductImage';
@@ -24,16 +25,34 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
+    let closedByPopState = false;
+
+    // Push history state so mobile hardware/gesture back button closes modal instead of exiting page
+    window.history.pushState({ modalOpen: true }, '');
+
+    const handlePopState = () => {
+      closedByPopState = true;
+      onClose();
+    };
+
     const onKeyDown = (event) => {
       if (event.key === 'Escape') {
         onClose();
       }
     };
 
+    window.addEventListener('popstate', handlePopState);
     window.addEventListener('keydown', onKeyDown);
+
     return () => {
       document.body.style.overflow = originalOverflow;
+      window.removeEventListener('popstate', handlePopState);
       window.removeEventListener('keydown', onKeyDown);
+
+      // Clean up history entry if closed programmatically (X button, backdrop click, Escape key, or bottom button)
+      if (!closedByPopState && window.history.state?.modalOpen) {
+        window.history.back();
+      }
     };
   }, [productoModal, onClose]);
 
@@ -75,27 +94,49 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3 backdrop-blur-sm animate-fade-in sm:p-4">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-2 sm:p-4 backdrop-blur-sm animate-fade-in"
+      onClick={onClose}
+    >
       <div
         role="dialog"
         aria-modal="true"
         aria-label={productoModal.nombre}
-        className={`relative w-[min(100%,680px)] max-h-[92vh] overflow-x-hidden overflow-y-auto rounded-[28px] border shadow-[0_25px_60px_-20px_rgba(37,99,235,0.7)] animate-scale-up scrollbar-none ${
+        onClick={(event) => event.stopPropagation()}
+        className={`relative flex flex-col w-[min(100%,680px)] max-h-[90vh] overflow-hidden rounded-[28px] border shadow-[0_25px_60px_-20px_rgba(37,99,235,0.7)] animate-scale-up ${
           modoDescanso
             ? 'border-[#2563EB]/30 bg-[#101827] text-slate-200'
-            : 'border-[#2563EB]/30 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.18),rgba(9,12,18,0.96)_45%)] text-white'
+            : 'border-[#2563EB]/30 bg-[#090d16] text-white'
         }`}
       >
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute top-4 right-4 text-slate-400 hover:text-white p-2 rounded-full bg-white/5 border border-white/10 cursor-pointer z-20"
-          aria-label="Cerrar modal"
-        >
-          <X className="w-4 h-4" />
-        </button>
+        {/* Sticky Header Bar for Mobile and Desktop navigation */}
+        <div className="sticky top-0 z-30 flex items-center justify-between border-b border-white/10 bg-[#0d1424]/95 px-4 py-3 backdrop-blur-md sm:px-6 shrink-0">
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-200 transition-all hover:bg-white/10 hover:text-white cursor-pointer active:scale-95"
+            aria-label="Volver al catálogo"
+          >
+            <ArrowLeft className="h-4 w-4 text-[#FACC15]" />
+            <span>Volver</span>
+          </button>
 
-        <div className="w-full min-w-0 p-4 sm:p-6 space-y-4">
+          <span className="text-xs font-black uppercase tracking-wider text-slate-200 truncate max-w-[160px] sm:max-w-xs">
+            {productoModal.nombre}
+          </span>
+
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex items-center justify-center rounded-full border border-white/15 bg-white/5 p-2 text-slate-300 transition-all hover:bg-white/10 hover:text-white cursor-pointer active:scale-95"
+            aria-label="Cerrar modal"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+
+        {/* Scrollable content container */}
+        <div className="flex-1 overflow-x-hidden overflow-y-auto p-4 sm:p-6 space-y-4 scrollbar-none">
           <div className="relative">
             <ProductImage
               src={productoModal.imagen}
@@ -275,16 +316,25 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
             </div>
           )}
 
-          <div>
+          <div className="pt-2 space-y-2.5">
             <a
               href={obtenerLinkWhatsApp()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-full bg-[#2563EB] px-5 py-3 text-xs font-black text-white shadow-[0_0_18px_rgba(37,99,235,0.25)] transition-all hover:bg-[#1d4ed8]"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-[#2563EB] px-5 py-3 text-xs font-black text-white shadow-[0_0_18px_rgba(37,99,235,0.25)] transition-all hover:bg-[#1d4ed8] active:scale-[0.985]"
             >
               <MessageCircle className="h-4 w-4 shrink-0 fill-current" />
               <span className="min-w-0 wrap-break-word">Solicitar por WhatsApp</span>
             </a>
+
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-xs font-bold text-slate-300 transition-all hover:bg-white/10 hover:text-white active:scale-[0.985] cursor-pointer"
+            >
+              <ArrowLeft className="h-3.5 w-3.5" />
+              <span>Volver al menú principal</span>
+            </button>
           </div>
         </div>
       </div>

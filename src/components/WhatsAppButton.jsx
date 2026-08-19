@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
   const whatsappUrl = buildWhatsAppLink('5493815891843', 'Hola, quisiera hacer una consulta sobre la plataforma.');
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex items-center group">
+    <div className="fixed bottom-5 right-5 z-40 flex items-center group">
       {/* Tooltip informativo al pasar el cursor */}
       <span className="mr-2.5 hidden sm:inline-block bg-[#12161f]/95 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl border border-white/10 shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0 pointer-events-none">
         ¿Otras plataformas? ¡ESCRIBINOS!
