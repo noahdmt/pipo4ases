@@ -30,7 +30,7 @@ export default function ProductCatalog({
       <div className="mb-3 flex flex-col items-center gap-2.5 text-center md:flex-row md:items-center md:justify-between md:text-left">
         <h2 className="flex items-center justify-center gap-2 text-base font-black uppercase tracking-[-0.04em] text-white sm:text-xl">
           <Zap className="h-4 w-4 text-[#FACC15]" />
-          {soloFavoritos ? 'Tus Favoritos Guardados' : 'Catálogo Premium'}
+          {soloFavoritos ? 'Tus Favoritos Guardados' : 'PLATAFORMAS DISPONIBLES'}
         </h2>
 
         <div className="flex flex-wrap items-center justify-center gap-1.5 overflow-x-auto pb-1 scrollbar-none md:justify-end">

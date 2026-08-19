@@ -43,7 +43,7 @@ export default function Hero({ busqueda, setBusqueda, modoDescanso }) {
             id="product-search"
             type="text"
             aria-label="Buscar productos o servicios"
-            placeholder="Buscar plataforma o nombre..."
+            placeholder="Buscador de plataformas"
             value={busqueda}
             onChange={(event) => setBusqueda(event.target.value)}
             className="hero-input w-full bg-transparent pr-2 text-xs focus:outline-none sm:text-sm lg:text-base"
