@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   X,
   Calculator,
@@ -19,8 +19,15 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
   const [precioVentaFicha, setPrecioVentaFicha] = useState(1);
   const [copiado, setCopiado] = useState(null);
 
+  const onCloseRef = useRef(onClose);
   useEffect(() => {
-    if (!productoModal) return undefined;
+    onCloseRef.current = onClose;
+  }, [onClose]);
+
+  const modalId = productoModal?.id;
+
+  useEffect(() => {
+    if (!modalId) return undefined;
 
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -36,12 +43,12 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
 
     const handlePopState = () => {
       historyPushed = false;
-      onClose();
+      onCloseRef.current?.();
     };
 
     const onKeyDown = (event) => {
       if (event.key === 'Escape') {
-        onClose();
+        onCloseRef.current?.();
       }
     };
 
@@ -61,7 +68,7 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
         }
       }
     };
-  }, [productoModal?.id]);
+  }, [modalId]);
 
   const paquetesActuales = useMemo(() => productoModal?.paquetes || [], [productoModal]);
   const paqueteSel = useMemo(
@@ -309,7 +316,7 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
             </div>
           </div>
 
-          {productoModal.detalles && (
+          {Array.isArray(productoModal.detalles) && productoModal.detalles.length > 0 && (
             <div className="w-full min-w-0">
               <h4 className="mb-2.5 text-xs font-bold text-white">SERVICIOS EXCLUSIVOS:</h4>
               <ul className="space-y-1.5">
