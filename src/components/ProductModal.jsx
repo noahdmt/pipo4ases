@@ -121,7 +121,7 @@ export default function ProductModal({ productoModal, onClose, modoDescanso }) {
             <span>Volver</span>
           </button>
 
-          <span className="text-xs font-black uppercase tracking-wider text-slate-200 truncate max-w-[160px] sm:max-w-xs">
+          <span className="text-xs font-black uppercase tracking-wider text-slate-200 truncate max-w-40 sm:max-w-xs">
             {productoModal.nombre}
           </span>
 
