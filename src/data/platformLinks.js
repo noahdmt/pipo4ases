@@ -404,18 +404,12 @@ const normalizeName = (name = '') =>
 export function resolvePlatformLinks(producto) {
   if (!producto) return { linkUsuario: null, linkAdmin: null };
 
-  let matchedEntry = null;
-
-  // 1. Check direct match by ID in PLATFORM_LINKS
-  if (producto.id && PLATFORM_LINKS[producto.id]) {
-    matchedEntry = PLATFORM_LINKS[producto.id];
-  } else {
-    // 2. Fallback check by normalized name
-    const nameNorm = normalizeName(producto.nombre);
-    matchedEntry = Object.values(PLATFORM_LINKS).find(
-      (entry) => normalizeName(entry.nombre) === nameNorm,
+  // 1. Check direct match by ID, fallback to normalized name
+  const matchedEntry =
+    (producto.id && PLATFORM_LINKS[producto.id]) ||
+    Object.values(PLATFORM_LINKS).find(
+      (entry) => normalizeName(entry.nombre) === normalizeName(producto.nombre),
     );
-  }
 
   if (matchedEntry) {
     return {
@@ -430,7 +424,7 @@ export function resolvePlatformLinks(producto) {
     };
   }
 
-  // 3. Fallback to product's own links or null
+  // 2. Fallback to product's own links or null
   return {
     linkUsuario: producto.linkUsuario || null,
     linkAdmin: producto.linkAdmin || null,
