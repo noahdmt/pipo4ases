@@ -1818,7 +1818,7 @@ const rawProductos = [
     categoria: 'plataformas',
     nombre: 'Vip32',
     subtitulo: 'Panel Blanco',
-    desc: 'Vip32 en panel blanco con rendimiento y paquetes accesibles.',
+    // desc: 'Vip32 en panel blanco con rendimiento y paquetes accesibles.',
     badge: 'Clásico',
     precioText: 'Desde $30.000',
     imagen: imagenFallback,
